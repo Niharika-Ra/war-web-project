@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git credentialsId: "${env.GIT_SSH_CREDENTIALS_ID}",
-                    url: 'git@github.com:your-org/your-private-repo.git',
+                    url: 'https://github.com/Niharika-Ra/war-web-project.git',
                     branch: 'main'
             }
         }
